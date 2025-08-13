@@ -1,5 +1,5 @@
 
-//credit to tony jefferson for pubsub
+//credit to tonethar for pubsub
 (function () {
   // 2 - `pubsub` is an object we going make global at the end of this IIFE
   // Why are we using an object literal instead of a class? Because we only need ONE instance
