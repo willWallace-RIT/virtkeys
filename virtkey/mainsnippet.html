@@ -1,0 +1,30 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>IndexPage</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <script type="module" src="src/pubsub.js"></script>
+    <script type="module" src="src/wc-virtual-key.js"></script>
+
+    <script type="module" src="src/key-manager.js"></script>
+    <script type="module" src="src/loader.js"></script>
+   <link rel="stylesheet" href="styles/main.css">
+
+    </head>
+    <body>
+
+    <div id="titlebox"><h4>not pressed<h4></div>
+ <div id="virtKeyFlex">
+              <div id="virtKeyGrid">
+              <!-- replace "?" with letter and keycode with ascii keycode-->
+                <!--<wc-virtkey id="?Key" data-width="100" data-height="100" data-padding="1" data-opacity=".5" data-negate="0" data-key="?" data-key-bottom-pad="12" data-key-right-pad="15" data-keycode='?'></wc-virtkey>
+-->
+<wc-virtkey id="aKey" data-width="100" data-height="100" data-padding="1" data-opacity=".5" data-negate="0" data-key="a" data-key-bottom-pad="12" data-key-right-pad="15" data-keycode='97'></wc-virtkey>
+              </div>
+            </div>
+            </body>
+
+</html>
+

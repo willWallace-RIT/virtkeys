@@ -1,0 +1,58 @@
+/*
+#gameCanvas{
+  z-index:1;
+}
+for other canvii. it should always be a z-index lower than #overlay canvas*/
+#overlayCanvas{
+  z-index:3;
+}
+
+#spriteCanvas{
+  z-index:2
+}
+
+
+#virtKeyFlex{ 
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+/* grid spacing for nine slots in two row (if doing wasd, w on one row, asd on another)*/
+/*
+#virtKeyGrid{
+  display:grid;
+  width: 80%;
+  height:100%;
+  z-index:3;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(9,1fr);
+  grid-template-areas: ". . ?  . . . . . ." ". . . . . . . . .";
+}
+*/
+#virtKeyGrid{
+  display:grid;
+  width: 80%;
+  height:100%;
+  z-index:3;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(9,1fr);
+  grid-template-areas: ". . a  . . . . . ." ". . . . . . . . .";
+}
+
+wc-virtkey{
+  width:100px;
+  height:100px;
+}
+#?Key{
+  grid-area:?;
+}
+
+
+
+@media screen and (max-width:811px) {
+  #virtKeyFlex{
+    margin-top: -200px;
+
+  } 
+
+}
